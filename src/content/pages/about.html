@@ -1,76 +1,159 @@
 ---
-title: 'About'
-description: 'Meta description for the page'
-preloadImg: '/assets/images/cabinets2.jpg'
-permalink: 'about/'
+title: "About"
+description: "Meta description for the page"
+permalink: "about/"
 eleventyNavigation:
-    key: About Us
-    order: 200
+  key: About Us
+  order: 200
 ---
 
-{% extends "layouts/base.html" %}
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/assets/css/about.css" />
+<link rel="stylesheet" href="/assets/css/critical.css" />
 
-{% block head %}
-    <link rel="stylesheet" href="/assets/css/about.css">
-{% endblock %}
+{% endblock %} {% block body %}
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
 
-{% block body %}
-    <!-- ============================================ -->
-    <!--                    LANDING                   -->
-    <!-- ============================================ -->
+<section id="int-hero">
+  <h1 id="home-h">About Us</h1>
+  <picture>
+    <source
+      media="(max-width: 600px)"
+      srcset="/assets/images/cabinets2-m.jpg"
+    />
+    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg" />
+    <img
+      aria-hidden="true"
+      decoding="async"
+      src="/assets/images/cabinets2.jpg"
+      alt="kitchen cabinets"
+      loading="eager"
+      width="2500"
+      height="1667"
+    />
+  </picture>
+</section>
 
-    <section id="int-hero">
-        <h1 id="home-h">About Us</h1>
-        <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
-        </picture>
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
 
-    </section>
-
-    <!-- ============================================ -->
-    <!--                 Side By Side                 -->
-    <!-- ============================================ -->
-
-    <section id="sbs">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="563">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="563">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About Company Title</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <div class="cs-flex-group">
-                    <p class="cs-flex-p">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
-                    </p>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
-                </div>
-                <a href="/projects" class="cs-button-solid">Our Projects</a>
-            </div>
-        </div>
-    </section>
-
-    {% include 'components/cta.html' %}
+<section id="sbs">
+  <div class="cs-container">
+    <!-- Left Image Section -->
+    <div class="cs-left">
+      <picture class="cs-picture cs-picture1">
+        <source
+          media="(max-width: 600px)"
+          srcset="/assets/images/cabinets2-m.jpg"
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="/assets/images/cabinets2.jpg"
+        />
+        <img
+          aria-hidden="true"
+          decoding="async"
+          src="/assets/images/cabinets2.jpg"
+          alt="cabinets"
+          loading="lazy"
+          width="400"
+          height="563"
+        />
+      </picture>
+      <picture class="cs-picture cs-picture2">
+        <source
+          media="(max-width: 600px)"
+          srcset="/assets/images/construction-m.jpg"
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="/assets/images/construction.jpg"
+        />
+        <img
+          aria-hidden="true"
+          decoding="async"
+          src="/assets/images/construction.jpg"
+          alt="house"
+          loading="lazy"
+          width="400"
+          height="563"
+        />
+      </picture>
+    </div>
+    <!-- Right Content Section-->
+    <div class="cs-right">
+      <span class="cs-topper">About Us</span>
+      <h2 class="cs-title">About EcoTech</h2>
+      <h3>Revolutionizing Home Cleaning Through Technology</h3>
+      <p>
+        At EcoTech, we are redefining the essence of home cleaning with our
+        forward-thinking approach. We are not just a service; we are a movement
+        towards a cleaner and more sustainable future. Our dedicated team of
+        professionals boasts over a decade of experience in the cleaning
+        industry, bringing expertise and passion to every household.
+      </p>
+      <br />
+      <h4>Our Vision</h4>
+      <p>
+        Our vision is to integrate cutting-edge technology into everyday
+        cleaning practices, making them more efficient, less intrusive, and
+        environmentally friendly. By harnessing smart technology, we ensure that
+        our services complement the dynamic rhythm of urban life, offering our
+        clients the luxury of time and peace of mind.
+      </p>
+      <br />
+      <h4>Our Services</h4>
+      <p>
+        We specialize in transforming urban homes into havens of purity and
+        tranquility. Our services are meticulously designed to be as unobtrusive
+        as possible, utilizing smart scheduling and automation to adapt to your
+        lifestyle. From routine maintenance to deep cleaning, every facet of our
+        work is executed with precision and respect for the environment.
+      </p>
+      <br />
+      <h4>Sustainability Commitment</h4>
+      <p>
+        Sustainability is at the core of our operation. We use biodegradable
+        cleaning agents, energy-efficient equipment, and adopt methods that
+        reduce water waste. Every action is taken with the intention to minimize
+        our carbon footprint and to uphold our responsibility to the planet.
+      </p>
+      <br />
+      <h4>Join Us on Our Journey</h4>
+      <p>
+        EcoTech is more than just a brand; it’s a commitment to a cleaner home
+        and a cleaner planet. Join us on this journey and become a part of the
+        solution. With EcoTech, experience the unparalleled satisfaction of a
+        spotless home and the pride of contributing to a greener world.
+      </p>
+      <br />
+      <div class="cs-flex-group">
+        <p class="cs-flex-p">
+          Driven by innovation and a deep commitment to our planet, we at
+          EcoTech are not just revolutionizing cleaning — we're cleaning with a
+          purpose. Every home we touch is a step towards a more sustainable
+          future, ensuring that our technological advancements leave a positive
+          mark not only on your space but on the environment. Join us, and be a
+          part of a movement that cherishes our world as much as we do.
+        </p>
+        <span class="cs-name">EVELYN WISE</span>
+        <span class="cs-job">CEO & Co-Founder</span>
+        <img
+          class="cs-quote-icon"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg"
+          alt="gavel"
+          width="136"
+          height="77"
+        />
+      </div>
+      <a href="/projects" class="cs-button-solid">Our Services</a>
+    </div>
+  </div>
+</section>
 
 {% endblock %}

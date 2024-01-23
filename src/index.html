@@ -1,349 +1,741 @@
 ---
-title: 'Pixel Perfect Websites'
-description: 'Meta description for the page'
-preloadImg: '/assets/images/landing.jpg'
-permalink: '/'
+title: "Pixel Perfect Websites"
+description: "Meta description for the page"
+permalink: "/"
 eleventyNavigation:
   key: Home
   order: 100
 ---
 
-{% extends "layouts/base.html" %}
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/assets/css/local.css" />
+<link rel="stylesheet" href="/assets/css/critical.css" />
 
-{% block head %}
-    <link rel="stylesheet" href="/assets/css/local.css" />
-    <link rel="stylesheet" href="/assets/css/critical.css" />
+<!-- Script for Netlify Identity -->
+<script
+  defer
+  src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+></script>
+<script defer>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", (user) => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+{% endblock %} {% block body %}
 
-    <!-- Script for Netlify Identity -->
-    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script defer>
-        if (window.netlifyIdentity) {
-            window
-                .netlifyIdentity
-                .on('init', (user) => {
-                    if (!user) {
-                        window
-                            .netlifyIdentity
-                            .on('login', () => {
-                                document.location.href = '/admin/';
-                            });
-                    }
-                });
-        }
-    </script>
-{% endblock %}
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
 
-{% block body %}
-
-    <!-- ============================================ -->
-    <!--                    Hero                      -->
-    <!-- ============================================ -->
-
-    <section id="hero">
-        <div class="cs-container">
-            <div class="cs-flex-group">
-                <span class="cs-topper">mountain hiking society</span>
-                <h1 class="cs-title">Explore the World with Exciting People</h1>
-                <p class="cs-text">
-                    Tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius. Nibh tortor id aliquet lectus proin nibh condimentum.
-                </p>
-                <a href="/about" class="cs-button-solid">Explore More</a>
-                <a href="/contact" class="cs-button-transparent">
-                    <img
-                    class="cs-img"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg"
-                    alt="play icon"
-                    width="17"
-                    height="17" />
-                    Get in Touch
-                </a>
-            </div>
+<section id="hero-1467">
+  <div class="cs-container">
+    <div class="cs-content">
+      <h1 class="cs-title">
+        Revolutionize Your Home with Smart Cleaning. Eco-friendly, Effortless,
+        Exceptional.
+      </h1>
+      <p class="cs-text">
+        CleanTech Home Solutions is a modern home cleaning service that
+        leverages advanced technology to provide efficient and eco-friendly
+        cleaning solutions for urban homes. With a focus on smart home
+        integration and environmentally friendly practices, CleanTech offers a
+        unique blend of convenience and sustainability.
+      </p>
+      <a href="/" class="cs-button-solid">Call Us Now</a>
+      <div class="cs-reviews" aria-hidden="true">
+        <div class="cs-reviews-flex">
+          <img
+            class="cs-reviews-img"
+            decoding="async"
+            fetchpriority="high"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hero-profile1.png"
+            alt="icon"
+            width="48"
+            height="48"
+          />
+          <img
+            class="cs-reviews-img"
+            decoding="async"
+            fetchpriority="high"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hero-profile2.png"
+            alt="icon"
+            width="48"
+            height="48"
+          />
+          <img
+            class="cs-reviews-img"
+            decoding="async"
+            fetchpriority="high"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hero-profile3.png"
+            alt="icon"
+            width="48"
+            height="48"
+          />
+          <img
+            class="cs-reviews-img"
+            decoding="async"
+            fetchpriority="high"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hero-profile4.png"
+            alt="icon"
+            width="48"
+            height="48"
+          />
+          <img
+            class="cs-reviews-img"
+            decoding="async"
+            fetchpriority="high"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hero-profile5.png"
+            alt="icon"
+            width="48"
+            height="48"
+          />
+          <span class="cs-reviews-number">+4k</span>
         </div>
+      </div>
+      <div class="cs-stars">
+        <img
+          class="cs-icon"
+          decoding="async"
+          fetchpriority="high"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/star-single.svg"
+          alt="icon"
+          width="16"
+          height="16"
+        />
+        <img
+          class="cs-icon"
+          decoding="async"
+          fetchpriority="high"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/star-single.svg"
+          alt="icon"
+          width="16"
+          height="16"
+        />
+        <img
+          class="cs-icon"
+          decoding="async"
+          fetchpriority="high"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/star-single.svg"
+          alt="icon"
+          width="16"
+          height="16"
+        />
+        <img
+          class="cs-icon"
+          decoding="async"
+          fetchpriority="high"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/star-single.svg"
+          alt="icon"
+          width="16"
+          height="16"
+        />
+        <img
+          class="cs-icon"
+          decoding="async"
+          fetchpriority="high"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/star-single.svg"
+          alt="icon"
+          width="16"
+          height="16"
+        />
+      </div>
+      <p class="cs-desc">CleanTech rated 4.9/5 based on 359 reviews.</p>
+    </div>
+    <div class="cs-right">
+      <span class="cs-tag">
+        Online Special
+        <span class="cs-dot" aria-hidden="true"></span>
+      </span>
+      <div class="cs-flex">
+        <h3 class="cs-h3">Get an Extra 15% OFF Your First cleaning Today</h3>
+        <span class="cs-expires">*Offer Expires April 16th</span>
+        <p class="cs-form-text">
+          Request a free* No-Obligation quote & expert advice from our expert
+          team!
+        </p>
+      </div>
+      <!--Form-->
+      <form class="cs-form" id="cs-form-1467" name="Contact Form" method="post">
+        <label class="cs-label">
+          Name
+          <input
+            class="cs-input"
+            required
+            type="text"
+            id="name-1467"
+            name="name"
+          />
+        </label>
+        <label class="cs-label">
+          Phone
+          <input
+            class="cs-input"
+            required
+            type="tel"
+            id="phone-1467"
+            name="phone"
+          />
+        </label>
+        <label class="cs-label">
+          Email
+          <input
+            class="cs-input"
+            required
+            type="email"
+            id="email-1467"
+            name="email"
+          />
+        </label>
+        <label class="cs-label">
+          How did you hear about us?
+          <input
+            class="cs-input"
+            required
+            type="text"
+            id="hear-1467"
+            name="heat"
+          />
+        </label>
+        <label class="cs-label cs-message">
+          Message
+          <textarea
+            class="cs-input cs-textarea"
+            required
+            name="Message"
+            id="message-1467"
+          ></textarea>
+        </label>
+        <button class="cs-button-solid cs-submit" type="submit">
+          Get Estimate
+        </button>
+      </form>
+    </div>
+  </div>
 
-        <!-- Background Image -->
+  <!-- Background Image, added in CSS as a backgorund image for parallax effect -->
+  <picture class="cs-background">
+    <source
+      media="(max-width: 600px)"
+      srcset="/assets/images/hero-image-m.webp"
+    />
+    <source
+      media="(min-width: 601px)"
+      srcset="/assets/images/hero-image.webp"
+    />
+    <img
+      loading="lazy"
+      decoding="async"
+      src="/assets/images/hero-image.jpg"
+      alt="field"
+      width="1920"
+      height="1200"
+      aria-hidden="true"
+    />
+  </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-1167">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">Our services</span>
+      <h2 class="cs-title">Pick Your Package</h2>
+      <p class="cs-text">
+        Tailored cleaning packages based on your preferences and needs.
+      </p>
+    </div>
+    <ul class="cs-card-group">
+      <li class="cs-item">
         <picture class="cs-picture">
-            <source media="(max-width: 600px)" srcset="/assets/images/landing-m.webp">
-            <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/landing.jpg" alt="new home" width="2500" height="1667" loading="eager">
+          <!--Mobile Image-->
+          <source
+            media="(max-width: 600px)"
+            srcset="/assets/images/smart-cleaning.webp"
+          />
+          <!--Tablet and above Image-->
+          <source
+            media="(min-width: 601px)"
+            srcset="/assets/images/smart-cleaning.webp"
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="/assets/images/smart-cleaning.jpg"
+            alt="smart cleaning"
+            width="413"
+            height="240"
+            aria-hidden="true"
+          />
         </picture>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                  Services                    -->
-    <!-- ============================================ -->
-
-    <section id="services" class="services">
-        <!-- Get Icons From flaticon.com -->
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service1.svg"
-                alt="appliance"
-                width="48"
-                height="48" />
-            </picture>
-            <h2>Service 1</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
+        <div class="cs-info">
+          <h3 class="cs-h3">Smart Cleaning</h3>
+          <p class="cs-item-text">
+            Integration with smart home systems to schedule and customize
+            cleaning sessions.
+          </p>
+          <a href="/" class="cs-link">
+            Read More
+            <img
+              class="cs-arrow"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/red-arrow-right.svg"
+              alt="icon"
+              width="20"
+              height="20"
+              aria-hidden="true"
+            />
+          </a>
         </div>
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service2.svg"
-                alt="appliance"
-                width="48"
-                height="48" />
-            </picture>
-            <h2>Service 2</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
+      </li>
+      <li class="cs-item">
+        <picture class="cs-picture">
+          <!--Mobile Image-->
+          <source
+            media="(max-width: 600px)"
+            srcset="/assets/images/eco-cleaning.webp"
+          />
+          <!--Tablet and above Image-->
+          <source
+            media="(min-width: 601px)"
+            srcset="/assets/images/eco-cleaning.webp"
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="/assets/images/eco-cleaning.jpg"
+            alt="mechanic"
+            width="413"
+            height="240"
+            aria-hidden="true"
+          />
+        </picture>
+        <div class="cs-info">
+          <h3 class="cs-h3">Eco-Cleaning</h3>
+          <p class="cs-item-text">
+            Use of eco-friendly cleaning products and methods.
+          </p>
+          <a href="/" class="cs-link">
+            Read More
+            <img
+              class="cs-arrow"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/red-arrow-right.svg"
+              alt="icon"
+              width="20"
+              height="20"
+              aria-hidden="true"
+            />
+          </a>
         </div>
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service3.svg"
-                alt="appliance"
-                width="48"
-                height="48" />
-            </picture>
-            <h2>Service 3</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
+      </li>
+      <li class="cs-item">
+        <picture class="cs-picture">
+          <!--Mobile Image-->
+          <source
+            media="(max-width: 600px)"
+            srcset="/assets/images/deep-clean.webp"
+          />
+          <!--Tablet and above Image-->
+          <source
+            media="(min-width: 601px)"
+            srcset="/assets/images/deep-clean.webp"
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="/assets/images/deep-clean.webp.jpg"
+            alt="mechanic"
+            width="413"
+            height="240"
+            aria-hidden="true"
+          />
+        </picture>
+        <div class="cs-info">
+          <h3 class="cs-h3">Deep Clean Service</h3>
+          <p class="cs-item-text">
+            Comprehensive deep cleaning for every part of the home.
+          </p>
+          <a href="/" class="cs-link">
+            Read More
+            <img
+              class="cs-arrow"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/red-arrow-right.svg"
+              alt="icon"
+              width="20"
+              height="20"
+              aria-hidden="true"
+            />
+          </a>
         </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                 Side By Side                 -->
-    <!-- ============================================ -->
-
-    <section id="sbs">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="563">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="563">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About Company Title</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <div class="cs-flex-group">
-                    <p class="cs-flex-p">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
-                    </p>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img 
-                    class="cs-quote-icon"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg"
-                    alt="gavel"
-                    width="136"
-                    height="77" />
-                </div>
-                <a href="/about" class="cs-button-solid">More About Us</a>
-            </div>
+      </li>
+      <li class="cs-item">
+        <picture class="cs-picture">
+          <!--Mobile Image-->
+          <source
+            media="(max-width: 600px)"
+            srcset="/assets/images/reg-maint.webp"
+          />
+          <!--Tablet and above Image-->
+          <source
+            media="(min-width: 601px)"
+            srcset="/assets/images/reg-maint.webp"
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="/assets/images/reg-maint.jpg"
+            alt="mechanic"
+            width="413"
+            height="240"
+            aria-hidden="true"
+          />
+        </picture>
+        <div class="cs-info">
+          <h3 class="cs-h3">Regular Maintenance</h3>
+          <p class="cs-item-text">Regular scheduled cleaning sessions.</p>
+          <a href="/" class="cs-link">
+            Read More
+            <img
+              class="cs-arrow"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/red-arrow-right.svg"
+              alt="icon"
+              width="20"
+              height="20"
+              aria-hidden="true"
+            />
+          </a>
         </div>
-    </section>
+      </li>
+    </ul>
+  </div>
+</section>
 
-    <!-- ============================================ -->
-    <!--            Extra Content To Rank             -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
 
-    <section id="sbs-r">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="560">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="560">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">SEO Ranking</span>
-                <h2 class="cs-title">Talk about a main service keyword</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non tenetur, iure nihil ipsam qui atque commodi id voluptatem nesciunt, quis animi fuga cum doloribus! Eaque laboriosam, unde consectetur iure asperiores ullam. Consequuntur debitis a voluptatibus vitae optio autem explicabo quia neque est quas, in placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus modi laudantium voluptatibus rem libero error minus quia eligendi sapiente eos.
-                </p>
-                <a href="/blog" class="cs-button-solid">Read our Blog</a>
-            </div>
+<section id="sbs-332">
+  <div class="cs-container">
+    <!-- Left Image Section -->
+    <div class="cs-image-group">
+      <picture class="cs-picture">
+        <source
+          media="(max-width: 600px)"
+          srcset="/assets/images/about-image.webp"
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="/assets/images/about-image.webp"
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/about-image.jpg"
+          alt="cleaner"
+          width="630"
+          height="630"
+          aria-hidden="true"
+        />
+      </picture>
+      <div class="cs-box">
+        <span class="cs-number">5</span>
+        <span class="cs-desc"
+          >Years<br />
+          Experience</span
+        >
+      </div>
+    </div>
+    <!-- Right Content Section-->
+    <div class="cs-content">
+      <span class="cs-topper">About Us</span>
+      <h2 class="cs-title">
+        EcoTech: Innovating Cleanliness with a Conscience
+      </h2>
+      <p class="cs-text">
+        EcoTech is an avant-garde home cleaning service embracing the power of
+        technology for a greener tomorrow. Specializing in urban dwellings, we
+        combine smart home efficiency with eco-conscious methods to deliver
+        pristine environments. Our commitment extends beyond cleanliness,
+        fostering a sustainable future with every space we revitalize.
+        Experience the synergy of innovation and eco-responsibility with
+        EcoTech.
+      </p>
+      <a
+        class="cs-button-solid"
+        aria-label="learn more about our programs"
+        href="/about"
+        >Learn More</a
+      >
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                 Why Choose                   -->
+<!-- ============================================ -->
+
+<section id="why-choose-891">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">Specialties</span>
+      <h2 class="cs-title">Why Choose Us</h2>
+      <p class="cs-text">Our Promise: Smarter, Greener, Customized Cleaning</p>
+    </div>
+    <ul class="cs-card-group">
+      <li class="cs-item">
+        <img
+          class="cs-icon"
+          src="/assets/svgs/tech-enabled.svg"
+          loading="lazy"
+          decoding="async"
+          alt="icon"
+          width="48"
+          height="48"
+          aria-hidden="true"
+        />
+        <!-- Text Grouped For Flexbox-->
+        <div class="cs-text-group">
+          <h3 class="cs-h3">Tech-Enabled Efficiency</h3>
+          <p class="cs-item-text">
+            Utilizes smart technology for seamless scheduling and real-time
+            updates.
+          </p>
         </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                   Gallery                    -->
-    <!-- ============================================ -->
-
-    <section id="gallery">
-        <div class="cs-container">
-            <span class="cs-topper">Our Portfolio</span>
-            <h2 class="cs-title">Et orci volutpat, back up generator installations</h2>
-            <div class="cs-image-group">
-                <!-- Row 1-->
-                <div class="cs-row cs-row-1">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port1-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port1.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port1.jpg" alt="new hallway" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port4-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port4.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port4.jpg" alt="new home construction" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port7-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port7.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port7.jpg" alt="building a new wall" loading="lazy" width="400" height="560">
-                    </picture>
-                </div>
-                <!-- Row 2 -->
-                <div class="cs-row cs-row-2">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port2-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port2.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port2.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port5-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port5.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port5.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port8-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port8.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port8.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
-                    </picture>
-                </div>
-                <!-- Row 3 -->
-                <div class="cs-row cs-row-3">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port3-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port3.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port3.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port6-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port6.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port6.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port9-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port9.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port9.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
-                    </picture>
-
-                </div>
-            </div>
-            <a href="/projects" class="cs-button-solid">View Full Gallery</a>
+      </li>
+      <li class="cs-item">
+        <img
+          class="cs-icon"
+          src="/assets/svgs/eco-friendly.svg"
+          loading="lazy"
+          decoding="async"
+          alt="icon"
+          width="48"
+          height="48"
+          aria-hidden="true"
+        />
+        <!-- Text Grouped For Flexbox-->
+        <div class="cs-text-group">
+          <h3 class="cs-h3">Eco-Friendly Approach</h3>
+          <p class="cs-item-text">
+            Commitment to sustainability with non-toxic, biodegradable cleaning
+            products.
+          </p>
         </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                   Reviews                    -->
-    <!-- ============================================ -->
-
-    <section id="reviews">
-        <div class="cs-container">
-            <span class="cs-topper">Our Reviews</span>
-            <h2 class="cs-title">Words From Our Customers</h2>
-            <p class="cs-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dolor volutpat porttitor sagittis nunc nisl. Sagittis sit pellentesque gravida viverra. Leo ut sed euismod tortor risus et. Ornare non neque, leo, ornare. Lorem ipsum dolor sit amet.
-            </p>
-            <ul class="cs-card-group">
-                <!-- Review 1 -->
-                <li class="cs-item">
-                    <img
-                    class="cs-item-img"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile5.png"
-                    alt="profile picture"
-                    width="80"
-                    height="80" />
-                    <p class="cs-item-p">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
-                    </p>
-                    <span class="cs-reviewer">
-                        Jon Doe
-                        <span class="cs-desc">Homeowner</span>
-                    </span>
-                    <img
-                    class="cs-item-stars"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-                    alt="stars"
-                    width="96"
-                    height="16" />
-                </li>
-                <!-- Review 2 -->
-                <li class="cs-item">
-                    <img
-                    class="cs-item-img"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile-4.png"
-                    alt="profile picture"
-                    width="80"
-                    height="80" />
-                    <p class="cs-item-p">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
-                    </p>
-                    <span class="cs-reviewer">
-                        Jane Doe
-                        <span class="cs-desc">Homeowner</span>
-                    </span>
-                    <img
-                    class="cs-item-stars"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-                    alt="stars"
-                    width="96"
-                    height="16" />
-                </li>
-            </ul>
-            <a aria-label="read more reviews" href="/reviews" class="cs-button-solid">Our Reviews</a>
+      </li>
+      <li class="cs-item">
+        <img
+          class="cs-icon"
+          src="/assets/svgs/personalized.svg"
+          loading="lazy"
+          decoding="async"
+          alt="icon"
+          width="48"
+          height="48"
+          aria-hidden="true"
+        />
+        <!-- Text Grouped For Flexbox-->
+        <div class="cs-text-group">
+          <h3 class="cs-h3">Personalized Experience</h3>
+          <p class="cs-item-text">
+            Custom cleaning plans designed to fit each client’s lifestyle and
+            preferences.
+          </p>
         </div>
-    </section>
+      </li>
+      <li class="cs-item">
+        <img
+          class="cs-icon"
+          src="/assets/svgs/professional-staff.svg"
+          loading="lazy"
+          decoding="async"
+          alt="icon"
+          width="48"
+          height="48"
+          aria-hidden="true"
+        />
+        <!-- Text Grouped For Flexbox-->
+        <div class="cs-text-group">
+          <h3 class="cs-h3">Professional Staff</h3>
+          <p class="cs-item-text">
+            Highly trained and vetted cleaning professionals.
+          </p>
+        </div>
+      </li>
+    </ul>
+    <a href="/" class="cs-button-solid">Contact Us</a>
+    <!--Floating Arrow Graphic-->
+    <img
+      class="cs-floater"
+      src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Forange-arrow.svg"
+      alt="arrow"
+      loading="lazy"
+      decoding="async"
+      aria-hidden="true"
+    />
+  </div>
+</section>
+<!-- ============================================ -->
+<!--                  Reviews                     -->
+<!-- ============================================ -->
 
-    {% include 'components/cta.html' %}
+<section id="reviews-982">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">Testimonials</span>
+      <h2 class="cs-title">
+        Endorsed by a Multitude of Homeowners and Businesses
+      </h2>
+    </div>
+    <ul class="cs-card-group">
+      <li class="cs-item">
+        <div class="cs-flex-group">
+          <picture class="cs-picture" aria-hidden="true">
+            <img
+              class="cs-profile"
+              src="/assets/images/reviewer1.jpg"
+              decoding="async"
+              alt="profile"
+              width="50"
+              height="50"
+            />
+          </picture>
+          <span class="cs-name"> Emily R. </span>
+        </div>
+        <p class="cs-review">
+          "CleanTech Home Solutions has completely transformed the way I view
+          home cleaning. Their smart technology integration makes scheduling a
+          breeze, and I love getting real-time updates. It's not just about a
+          clean home – it's about living in a space that feels truly cared for.
+          Their commitment to using eco-friendly products gives me peace of
+          mind, knowing I'm making a positive choice for the environment. Highly
+          recommend!"
+        </p>
+      </li>
+      <li class="cs-item">
+        <div class="cs-flex-group">
+          <picture class="cs-picture" aria-hidden="true">
+            <img
+              class="cs-profile"
+              src="/assets/images/reviewer2.jpg"
+              decoding="async"
+              alt="profile"
+              width="50"
+              height="50"
+            />
+          </picture>
+          <span class="cs-name"> Michael T. </span>
+        </div>
+        <p class="cs-review">
+          "As someone who values both technology and sustainability, CleanTech
+          is the perfect fit for me. Their eco-friendly approach aligns with my
+          lifestyle, and the tech-enabled efficiency saves me so much time. The
+          staff is always professional, friendly, and incredibly thorough. Every
+          corner of my home sparkles! The personalized experience they offer is
+          unmatched. I wouldn't choose anyone else for my home cleaning needs."
+        </p>
+      </li>
+      <li class="cs-item">
+        <div class="cs-flex-group">
+          <picture class="cs-picture" aria-hidden="true">
+            <img
+              class="cs-profile"
+              src="/assets/images/reviewer3.jpg"
+              decoding="async"
+              alt="profile"
+              width="50"
+              height="50"
+            />
+          </picture>
+          <span class="cs-name"> Anita J. </span>
+        </div>
+        <p class="cs-review">
+          "I've been using CleanTech Home Solutions for my regular home
+          maintenance, and they never disappoint. The quality of their work is
+          consistently high, and their staff is always professional and
+          respectful of my space. I love the custom cleaning plans – they really
+          take the time to understand and meet my specific needs. It's
+          reassuring to know that my home is being taken care of by such a
+          dedicated and eco-conscious team."
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+<!-- ============================================ -->
+<!--                    CTA                       -->
+<!-- ============================================ -->
+
+<section id="cta-384">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">Our Team</span>
+      <h2 class="cs-title">Seeking Impeccable Cleanliness?</h2>
+      <p class="cs-text">
+        Our dedication shines in every task we undertake. Fueled by enthusiasm
+        and a commitment to innovation, we champion the smart integration of
+        technology for seamless cleaning solutions. Ready for a spotless space?
+      </p>
+      <a href="/" class="cs-button-solid">DISCOVER YOUR PLAN</a>
+    </div>
+    <div class="cs-image-group">
+      <!--Powder Image-->
+      <picture class="cs-powder">
+        <source
+          media="(max-width: 600px)"
+          srcset="/assets/images/cleaning-supplies.webp"
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="/assets/images/cleaning-supplies.webp"
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/cleaning-supplies.png"
+          alt="powder"
+          width="485"
+          height="460"
+          aria-hidden="true"
+        />
+      </picture>
+      <!--Bucket Image-->
+    </div>
+  </div>
+  <!--Background Image-->
+  <picture class="cs-background">
+    <source
+      media="(max-width: 600px)"
+      srcset="https://csimg.nyc3.digitaloceanspaces.com/CTA/fabric-m.png"
+    />
+    <source
+      media="(min-width: 601px)"
+      srcset="https://csimg.nyc3.digitaloceanspaces.com/CTA/fabric.png"
+    />
+    <img
+      loading="lazy"
+      decoding="async"
+      src="https://csimg.nyc3.digitaloceanspaces.com/CTA/fabric.png"
+      alt="fabric"
+      width="1920"
+      height="660"
+      aria-hidden="true"
+    />
+  </picture>
+</section>
+
 {% endblock %}
